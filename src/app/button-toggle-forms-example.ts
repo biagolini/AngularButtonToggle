@@ -9,10 +9,7 @@ import { FormControl } from '@angular/forms';
   templateUrl: 'button-toggle-forms-example.html',
 })
 export class ButtonToggleFormsExample {
-  fontStyleControl = new FormControl();
-  selectedNumber: number = 0;
+  firstNumber: number = 1;
+  secondNumber: number = 1;
+  listNumber: number[] = [1, 2, 3, 4, 5, 6];
 }
-
-/**  Copyright 2022 Google LLC. All Rights Reserved.
-    Use of this source code is governed by an MIT-style license that
-    can be found in the LICENSE file at https://angular.io/license */

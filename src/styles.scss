@@ -1,9 +1,36 @@
-body {
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  margin: 0;
-  padding: 30px;
+h1 {
+  font-size: 30px;
+  font-weight: bold;
 }
 
-html, body {
-  height: 100%;
+h2 {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.full-width {
+  width: 100%;
+}
+.half-width {
+  width: 40%;
+  padding: 4%;
+}
+
+.center {
+  text-align: center;
+}
+
+.mat-button-toggle {
+  background-color: rgb(200, 220, 200);
+  color: rgb(5, 50, 5);
+}
+
+.mat-button-toggle:hover {
+  background-color: transparent;
+  color: #000 !important;
+}
+
+.mat-button-toggle-checked {
+  background-color: rgb(5, 50, 5);
+  color: rgb(200, 220, 200) !important;
 }
