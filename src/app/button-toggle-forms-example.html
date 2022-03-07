@@ -1,0 +1,30 @@
+<section>
+  <h4>Select a number</h4>
+  <mat-button-toggle-group
+    [(ngModel)]="selectedNumber"
+    aria-label="Font Style"
+    [vertical]="true"
+  >
+    <mat-button-toggle value="0">0</mat-button-toggle>
+    <mat-button-toggle value="1">1</mat-button-toggle>
+    <mat-button-toggle value="2">2</mat-button-toggle>
+  </mat-button-toggle-group>
+  <p>Chosen value is {{selectedNumber}}</p>
+</section>
+
+<section>
+  <h4>Button Toggle inside of a Reactive form</h4>
+  <mat-button-toggle-group
+    [formControl]="fontStyleControl"
+    aria-label="Font Style"
+  >
+    <mat-button-toggle value="bold">Bold</mat-button-toggle>
+    <mat-button-toggle value="italic">Italic</mat-button-toggle>
+    <mat-button-toggle value="underline">Underline</mat-button-toggle>
+  </mat-button-toggle-group>
+  <p>Chosen value is {{fontStyleControl.value}}</p>
+</section>
+
+<!-- Copyright 2022 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at https://angular.io/license -->
